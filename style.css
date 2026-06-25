@@ -331,41 +331,17 @@ body {
   aspect-ratio: 3/4;
   background: var(--blush-pale);
   border: 1px solid var(--blush-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
   position: relative;
   z-index: 1;
 }
 
-.meet-photo-placeholder img {
+.meet-photo-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   display: block;
-}
-
-.meet-photo-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding: 2rem;
-}
-
-.meet-photo-inner svg {
-  width: 80px;
-  height: 80px;
-  opacity: 0.5;
-}
-
-.meet-photo-label {
-  font-family: var(--font-body);
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--blush);
 }
 
 .meet-photo-accent {
