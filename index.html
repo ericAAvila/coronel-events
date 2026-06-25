@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coronel Events — Planning & Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <img src="logo.png" alt="Coronel Events Planning & Design" class="nav-logo-img" />
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#meet" onclick="closeMenu()">Meet Kenny</a></li>
+        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li><a href="#gallery" onclick="closeMenu()">Gallery</a></li>
+        <li><a href="#testimonials" onclick="closeMenu()">Reviews</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Inquire</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="floral-left" aria-hidden="true">
+      <svg viewBox="0 0 220 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="60" cy="180" rx="38" ry="55" fill="#C9A0A0" opacity="0.18" transform="rotate(-20 60 180)"/>
+        <ellipse cx="90" cy="240" rx="28" ry="42" fill="#D4B8B8" opacity="0.22" transform="rotate(15 90 240)"/>
+        <ellipse cx="40" cy="310" rx="32" ry="48" fill="#C9A0A0" opacity="0.15" transform="rotate(-10 40 310)"/>
+        <ellipse cx="110" cy="160" rx="22" ry="34" fill="#E8D5C4" opacity="0.25" transform="rotate(25 110 160)"/>
+        <ellipse cx="70" cy="390" rx="26" ry="38" fill="#D4B8B8" opacity="0.18" transform="rotate(-30 70 390)"/>
+        <circle cx="55" cy="195" r="6" fill="#C9A0A0" opacity="0.35"/>
+        <circle cx="95" cy="255" r="4" fill="#D4B8B8" opacity="0.4"/>
+        <circle cx="80" cy="330" r="5" fill="#C9A0A0" opacity="0.3"/>
+        <path d="M60 180 Q80 220 90 240" stroke="#C9A096" stroke-width="1.5" opacity="0.25" fill="none"/>
+        <path d="M90 240 Q70 275 40 310" stroke="#C9A096" stroke-width="1.5" opacity="0.2" fill="none"/>
+        <path d="M40 310 Q75 350 70 390" stroke="#C9A096" stroke-width="1.5" opacity="0.18" fill="none"/>
+        <ellipse cx="30" cy="130" rx="18" ry="26" fill="#E8D5C4" opacity="0.2" transform="rotate(10 30 130)"/>
+        <ellipse cx="120" cy="290" rx="16" ry="24" fill="#C9A0A0" opacity="0.15" transform="rotate(-15 120 290)"/>
+        <ellipse cx="50" cy="460" rx="20" ry="30" fill="#D4B8B8" opacity="0.15" transform="rotate(20 50 460)"/>
+      </svg>
+    </div>
+    <div class="floral-right" aria-hidden="true">
+      <svg viewBox="0 0 220 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="160" cy="180" rx="38" ry="55" fill="#C9A0A0" opacity="0.18" transform="rotate(20 160 180)"/>
+        <ellipse cx="130" cy="240" rx="28" ry="42" fill="#D4B8B8" opacity="0.22" transform="rotate(-15 130 240)"/>
+        <ellipse cx="180" cy="310" rx="32" ry="48" fill="#C9A0A0" opacity="0.15" transform="rotate(10 180 310)"/>
+        <ellipse cx="110" cy="160" rx="22" ry="34" fill="#E8D5C4" opacity="0.25" transform="rotate(-25 110 160)"/>
+        <ellipse cx="150" cy="390" rx="26" ry="38" fill="#D4B8B8" opacity="0.18" transform="rotate(30 150 390)"/>
+        <circle cx="165" cy="195" r="6" fill="#C9A0A0" opacity="0.35"/>
+        <circle cx="125" cy="255" r="4" fill="#D4B8B8" opacity="0.4"/>
+        <circle cx="140" cy="330" r="5" fill="#C9A0A0" opacity="0.3"/>
+        <path d="M160 180 Q140 220 130 240" stroke="#C9A096" stroke-width="1.5" opacity="0.25" fill="none"/>
+        <path d="M130 240 Q150 275 180 310" stroke="#C9A096" stroke-width="1.5" opacity="0.2" fill="none"/>
+        <path d="M180 310 Q145 350 150 390" stroke="#C9A096" stroke-width="1.5" opacity="0.18" fill="none"/>
+        <ellipse cx="190" cy="130" rx="18" ry="26" fill="#E8D5C4" opacity="0.2" transform="rotate(-10 190 130)"/>
+        <ellipse cx="100" cy="290" rx="16" ry="24" fill="#C9A0A0" opacity="0.15" transform="rotate(15 100 290)"/>
+        <ellipse cx="170" cy="460" rx="20" ry="30" fill="#D4B8B8" opacity="0.15" transform="rotate(-20 170 460)"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Maryland &amp; South Carolina</p>
+      <div class="hero-divider"><span>✦</span></div>
+      <h1 class="hero-title">
+        <em>Coronel</em><br>
+        EVENTS
+      </h1>
+      <p class="hero-subtitle">Planning &amp; Design</p>
+      <div class="hero-divider"><span>✦</span></div>
+      <p class="hero-tagline">Where every detail tells your story.</p>
+      <a href="#services" class="btn-primary">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label">About Us</div>
+      <h2 class="section-title">Crafted with Culture.<br><em>Designed with Love.</em></h2>
+      <div class="ornament-divider" aria-hidden="true">
+        <svg viewBox="0 0 300 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="15" x2="120" y2="15" stroke="#C9A0A0" stroke-width="0.8" opacity="0.6"/>
+          <circle cx="140" cy="15" r="4" fill="#C9A0A0" opacity="0.5"/>
+          <circle cx="150" cy="15" r="2.5" fill="#C9A096" opacity="0.7"/>
+          <circle cx="160" cy="15" r="4" fill="#C9A0A0" opacity="0.5"/>
+          <line x1="180" y1="15" x2="300" y2="15" stroke="#C9A0A0" stroke-width="0.8" opacity="0.6"/>
+        </svg>
+      </div>
+      <p class="about-text">
+        At Coronel Events, we believe that every celebration is a reflection of who you are — your roots, your joy, your legacy. From the graceful traditions of a quinceañera to the timeless romance of a wedding day, we pour our hearts into every detail so you can be fully present in every moment.
+      </p>
+      <p class="about-text">
+        Serving families across Maryland and South Carolina, we bring elegance, culture, and personalized care to each event we have the honor of planning.
+      </p>
+    </div>
+  </section>
+
+  <!-- MEET THE PLANNER -->
+  <section class="meet" id="meet">
+    <div class="container">
+      <div class="meet-grid">
+        <div class="meet-photo-wrap">
+          <div class="meet-photo-placeholder" aria-label="Photo of Kenny Coronel">
+            <div class="meet-photo-inner">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="60" cy="48" r="26" fill="#C9A0A0" opacity="0.3"/>
+                <ellipse cx="60" cy="100" rx="38" ry="22" fill="#C9A0A0" opacity="0.2"/>
+              </svg>
+              <p class="meet-photo-label">Photo Coming Soon</p>
+            </div>
+          </div>
+          <div class="meet-photo-accent" aria-hidden="true"></div>
+        </div>
+        <div class="meet-content">
+          <div class="section-label" style="text-align:left;">Meet the Planner</div>
+          <h2 class="section-title meet-title">Hello, I'm <em>Kenny.</em></h2>
+          <div class="ornament-divider ornament-left" aria-hidden="true">
+            <svg viewBox="0 0 300 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0" y1="15" x2="120" y2="15" stroke="#C9A0A0" stroke-width="0.8" opacity="0.6"/>
+              <circle cx="140" cy="15" r="4" fill="#C9A0A0" opacity="0.5"/>
+              <circle cx="150" cy="15" r="2.5" fill="#C9A096" opacity="0.7"/>
+              <circle cx="160" cy="15" r="4" fill="#C9A0A0" opacity="0.5"/>
+              <line x1="180" y1="15" x2="300" y2="15" stroke="#C9A0A0" stroke-width="0.8" opacity="0.6"/>
+            </svg>
+          </div>
+          <p class="meet-text">
+            I have always loved creating meaningful experiences that bring people together. From planning campus programs and large-scale events to celebrating life's biggest milestones — weddings and quinces — I have seen firsthand how special a well-planned event can be.
+          </p>
+          <p class="meet-text">
+            My goal is simple: to help you enjoy your celebration while I handle the details.
+          </p>
+          <div class="meet-stats">
+            <div class="meet-stat">
+              <span class="meet-stat-number">12+</span>
+              <span class="meet-stat-label">Quinceañeras &amp; Weddings</span>
+            </div>
+            <div class="meet-stat">
+              <span class="meet-stat-number">100+</span>
+              <span class="meet-stat-label">Events Coordinated</span>
+            </div>
+            <div class="meet-stat">
+              <span class="meet-stat-number">2</span>
+              <span class="meet-stat-label">States Served</span>
+            </div>
+          </div>
+          <p class="meet-text meet-text--experience">
+            With experience in decor and custom crafts, choreography, vendor coordination, bartending, and day-of logistics — I bring creativity, organization, and attention to detail to every celebration. My passion is creating memorable experiences that allow clients to enjoy their special day, stress-free.
+          </p>
+          <a href="#contact" class="btn-primary">Work With Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-label">What We Offer</div>
+      <h2 class="section-title">Our <em>Services</em></h2>
+      <div class="ornament-divider" aria-hidden="true">
+        <svg viewBox="0 0 300 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="15" x2="120" y2="15" stroke="#C9A0A0" stroke-width="0.8" opacity="0.6"/>
+          <circle cx="140" cy="15" r="4" fill="#C9A0A0" opacity="0.5"/>
+          <circle cx="150" cy="15" r="2.5" fill="#C9A096" opacity="0.7"/>
+          <circle cx="160" cy="15" r="4" fill="#C9A0A0" opacity="0.5"/>
+          <line x1="180" y1="15" x2="300" y2="15" stroke="#C9A0A0" stroke-width="0.8" opacity="0.6"/>
+        </svg>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Quinceañera -->
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="28" stroke="#C9A0A0" stroke-width="1" opacity="0.4"/>
+              <path d="M30 12 L33 22 L44 22 L35 28 L38 38 L30 32 L22 38 L25 28 L16 22 L27 22 Z" fill="#C9A0A0" opacity="0.35"/>
+              <circle cx="30" cy="30" r="5" fill="#C9A096" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Quinceañera</h3>
+          <p class="service-subtitle">A milestone worth celebrating beautifully.</p>
+          <ul class="service-list">
+            <li>Choreography</li>
+            <li>Full Event Planning</li>
+            <li>Day-of Coordinator Services</li>
+          </ul>
+          <a href="#contact" class="btn-secondary">Request a Quote</a>
+        </div>
+
+        <!-- Wedding -->
+        <div class="service-card service-card--featured">
+          <div class="featured-tag">Most Popular</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="28" stroke="#C9A0A0" stroke-width="1" opacity="0.5"/>
+              <path d="M30 20 C30 20 20 26 20 33 C20 38.5 24.5 43 30 43 C35.5 43 40 38.5 40 33 C40 26 30 20 30 20Z" fill="#C9A0A0" opacity="0.3"/>
+              <path d="M22 24 C22 24 18 28 18 33" stroke="#C9A0A0" stroke-width="1.2" opacity="0.4" fill="none"/>
+              <path d="M38 24 C38 24 42 28 42 33" stroke="#C9A0A0" stroke-width="1.2" opacity="0.4" fill="none"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Wedding</h3>
+          <p class="service-subtitle">Your love story, flawlessly told.</p>
+          <ul class="service-list">
+            <li>Full Wedding Planning</li>
+            <li>Day-of Coordinator Services</li>
+          </ul>
+          <a href="#contact" class="btn-secondary">Request a Quote</a>
+        </div>
+
+        <!-- Special Events -->
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="28" stroke="#C9A0A0" stroke-width="1" opacity="0.4"/>
+              <rect x="18" y="22" width="24" height="18" rx="2" stroke="#C9A0A0" stroke-width="1.2" fill="#C9A0A0" opacity="0.2"/>
+              <line x1="18" y1="28" x2="42" y2="28" stroke="#C9A0A0" stroke-width="1" opacity="0.4"/>
+              <line x1="24" y1="18" x2="24" y2="24" stroke="#C9A0A0" stroke-width="1.5" opacity="0.5"/>
+              <line x1="36" y1="18" x2="36" y2="24" stroke="#C9A0A0" stroke-width="1.5" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Special Events</h3>
+          <p class="service-subtitle">Every occasion deserves intention.</p>
+          <ul class="service-list">
+            <li>Custom Event Experiences</li>
+            <li>DM for Full Details</li>
+          </ul>
+          <a href="#contact" class="btn-secondary">Get In Touch</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-label">Our Work</div>
+      <h2 class="section-title">A Glimpse of <em>Our Events</em></h2>
+      <div class="ornament-divider" aria-hidden="true">
+        <svg viewBox="0 0 300 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="15" x2="120" y2="15" stroke="#C9A0A0" stroke-width="0.8" opacity="0.6"/>
+          <circle cx="140" cy="15" r="4" fill="#C9A0A0" opacity="0.5"/>
+          <circle cx="150" cy="15" r="2.5" fill="#C9A096" opacity="0.7"/>
+          <circle cx="160" cy="15" r="4" fill="#C9A0A0" opacity="0.5"/>
+          <line x1="180" y1="15" x2="300" y2="15" stroke="#C9A0A0" stroke-width="0.8" opacity="0.6"/>
+        </svg>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--tall">
+          <div class="gallery-placeholder">
+            <span>Photo 1</span>
+          </div>
+          <div class="gallery-overlay"><p>Quinceañera</p></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <span>Photo 2</span>
+          </div>
+          <div class="gallery-overlay"><p>Wedding</p></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <span>Photo 3</span>
+          </div>
+          <div class="gallery-overlay"><p>Décor &amp; Design</p></div>
+        </div>
+        <div class="gallery-item gallery-item--wide">
+          <div class="gallery-placeholder">
+            <span>Photo 4</span>
+          </div>
+          <div class="gallery-overlay"><p>Special Events</p></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <span>Photo 5</span>
+          </div>
+          <div class="gallery-overlay"><p>Choreography</p></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <span>Photo 6</span>
+          </div>
+          <div class="gallery-overlay"><p>Florals</p></div>
+        </div>
+      </div>
+      <p class="gallery-note">
+        <!-- To add your own photos: replace each .gallery-placeholder div with:
+             <img src="your-photo.jpg" alt="Description of event" /> -->
+        Photos coming soon — check back as we continue to grow our portfolio.
+      </p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-label">Kind Words</div>
+      <h2 class="section-title">What Our <em>Clients Say</em></h2>
+      <div class="ornament-divider" aria-hidden="true">
+        <svg viewBox="0 0 300 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="15" x2="120" y2="15" stroke="#C9A0A0" stroke-width="0.8" opacity="0.6"/>
+          <circle cx="140" cy="15" r="4" fill="#C9A0A0" opacity="0.5"/>
+          <circle cx="150" cy="15" r="2.5" fill="#C9A096" opacity="0.7"/>
+          <circle cx="160" cy="15" r="4" fill="#C9A0A0" opacity="0.5"/>
+          <line x1="180" y1="15" x2="300" y2="15" stroke="#C9A0A0" stroke-width="0.8" opacity="0.6"/>
+        </svg>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote" aria-hidden="true">&#8220;</div>
+          <p class="testimonial-text">Kenny made our daughter's quinceañera an absolute dream. She handled everything from the choreography rehearsals to the day-of timeline, and we didn't have to worry about a single thing. Our family still talks about how perfect the evening was.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-initials">MR</div>
+            <div>
+              <p class="testimonial-name">Maria R.</p>
+              <p class="testimonial-event">Quinceañera — Maryland</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote" aria-hidden="true">&#8220;</div>
+          <p class="testimonial-text">From our first consultation to the moment we walked down the aisle, Kenny was calm, professional, and genuinely invested in our vision. The décor was stunning, and she kept everything running on time. We couldn't have asked for a better coordinator.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-initials">JA</div>
+            <div>
+              <p class="testimonial-name">Jasmine &amp; Andre</p>
+              <p class="testimonial-event">Wedding — South Carolina</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote" aria-hidden="true">&#8220;</div>
+          <p class="testimonial-text">I hired Kenny for my daughter's quinceañera and she went above and beyond. The custom crafts, the floral arrangements, the attention to cultural details — it all reflected exactly who my daughter is. Thank you, Kenny, for making it so special.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-initials">LC</div>
+            <div>
+              <p class="testimonial-name">Lucia C.</p>
+              <p class="testimonial-event">Quinceañera — Maryland</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-label">Let's Connect</div>
+      <h2 class="section-title">Start Your <em>Story</em></h2>
+      <div class="ornament-divider" aria-hidden="true">
+        <svg viewBox="0 0 300 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="15" x2="120" y2="15" stroke="#C9A0A0" stroke-width="0.8" opacity="0.6"/>
+          <circle cx="140" cy="15" r="4" fill="#C9A0A0" opacity="0.5"/>
+          <circle cx="150" cy="15" r="2.5" fill="#C9A096" opacity="0.7"/>
+          <circle cx="160" cy="15" r="4" fill="#C9A0A0" opacity="0.5"/>
+          <line x1="180" y1="15" x2="300" y2="15" stroke="#C9A0A0" stroke-width="0.8" opacity="0.6"/>
+        </svg>
+      </div>
+      <p class="contact-intro">Send a DM with your name, event type, event date, event location, and estimated guest count. Once received, we will schedule a consultation to discuss your vision and how we can help bring it to life.</p>
+
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" />
+          </div>
+          <div class="form-group">
+            <label for="service">Event Type</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="quinceanera-choreography">Quinceañera — Choreography</option>
+              <option value="quinceanera-planning">Quinceañera — Planning</option>
+              <option value="quinceanera-coordinator">Quinceañera — Day-of Coordinator</option>
+              <option value="wedding-planning">Wedding — Planning</option>
+              <option value="wedding-coordinator">Wedding — Day-of Coordinator</option>
+              <option value="special-events">Special Events</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Event Date</label>
+            <input type="date" id="date" name="event_date" />
+          </div>
+          <div class="form-group">
+            <label for="location">Event Location</label>
+            <input type="text" id="location" name="event_location" placeholder="City, State" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="guests">Estimated Guest Count</label>
+          <input type="number" id="guests" name="guest_count" placeholder="e.g. 150" min="1" />
+        </div>
+        <div class="form-group">
+          <label for="message">Tell Us About Your Vision</label>
+          <textarea id="message" name="message" rows="5" placeholder="Share your vision, inspiration, theme, or anything else you'd like us to know..."></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn-primary">Send Inquiry</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+          <img src="logo.png" alt="Coronel Events Planning & Design" class="footer-logo-img" />
+      </div>
+      <div class="footer-divider-v" aria-hidden="true"></div>
+      <div class="footer-info">
+        <p>Serving Maryland &amp; South Carolina</p>
+        <p class="footer-copy">&copy; 2025 Coronel Events Planning &amp; Design. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const links = document.getElementById('navLinks');
+      links.classList.toggle('open');
+    }
+    function closeMenu() {
+      document.getElementById('navLinks').classList.remove('open');
+    }
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
