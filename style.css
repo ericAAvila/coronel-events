@@ -62,16 +62,58 @@ body {
 }
 
 .nav-logo {
+  text-decoration: none;
   display: flex;
   align-items: center;
-  text-decoration: none;
 }
 
-.nav-logo-img {
-  height: 62px;
-  width: auto;
-  display: block;
-  transition: opacity 0.2s;
+.logo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.logo-coronel-row {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.logo-star {
+  width: 28px;
+  height: 12px;
+  opacity: 0.75;
+  flex-shrink: 0;
+}
+
+.logo-coronel {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--charcoal);
+  letter-spacing: 0.06em;
+  line-height: 1;
+}
+
+.logo-events {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  letter-spacing: 0.22em;
+  line-height: 1;
+}
+
+.logo-sub {
+  font-family: var(--font-body);
+  font-size: 0.48rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--charcoal-light);
+  line-height: 1;
 }
 
 .nav-links {
@@ -807,12 +849,30 @@ body {
   text-align: center;
 }
 
-.footer-logo-img {
-  height: 56px;
-  width: auto;
-  display: block;
-  filter: brightness(0) invert(1);
-  opacity: 0.85;
+.logo-wrap--footer {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.logo-wrap--footer .logo-coronel {
+  color: var(--blush-light);
+  font-size: 1rem;
+}
+
+.logo-wrap--footer .logo-events {
+  color: var(--white);
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.logo-wrap--footer .logo-accent {
+  color: var(--gold-light);
+}
+
+.logo-wrap--footer .logo-sub {
+  color: rgba(250,248,245,0.45);
+  font-size: 0.5rem;
 }
 
 .footer-divider-v {
@@ -908,6 +968,28 @@ body {
   .meet-stats {
     gap: 1.25rem;
     flex-wrap: wrap;
+  }
+
+  .logo-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+  }
+
+  .logo-accent--hidden-mobile {
+    display: none;
+  }
+
+  .logo-coronel {
+    font-size: 0.95rem;
+  }
+
+  .logo-events {
+    font-size: 1.1rem;
+  }
+
+  .logo-sub {
+    font-size: 0.48rem;
   }
 }
 
