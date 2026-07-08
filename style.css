@@ -915,6 +915,37 @@ body {
   color: rgba(250,248,245,0.3) !important;
 }
 
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 0.75rem 0;
+  flex-wrap: wrap;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: rgba(250,248,245,0.55);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-social-link:hover {
+  color: var(--blush-light);
+}
+
+.footer-social-link svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
 /* ============================================
    RESPONSIVE
    ============================================ */
