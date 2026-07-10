@@ -135,6 +135,30 @@ body {
 
 .nav-links a:hover { color: var(--blush); }
 
+.nav-social-divider {
+  width: 1px;
+  height: 16px;
+  background: var(--blush-light);
+  margin: 0 0.25rem;
+  align-self: center;
+}
+
+.nav-social-link {
+  display: flex;
+  align-items: center;
+  color: var(--charcoal-light);
+  transition: color 0.2s;
+}
+
+.nav-social-link:hover {
+  color: var(--blush);
+}
+
+.nav-social-link svg {
+  width: 16px;
+  height: 16px;
+}
+
 .nav-toggle {
   display: none;
   background: none;
