@@ -667,97 +667,6 @@ body {
 }
 
 /* ============================================
-   TESTIMONIALS
-   ============================================ */
-
-.testimonials {
-  padding: 6rem 0;
-  background: var(--white);
-}
-
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 1rem;
-}
-
-.testimonial-card {
-  background: var(--cream);
-  border: 1px solid var(--blush-light);
-  padding: 2.5rem 2rem 2rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.testimonial-quote {
-  font-family: var(--font-display);
-  font-size: 4rem;
-  font-weight: 300;
-  color: var(--blush);
-  opacity: 0.35;
-  line-height: 1;
-  position: absolute;
-  top: 1rem;
-  left: 1.5rem;
-}
-
-.testimonial-text {
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  font-weight: 300;
-  font-style: italic;
-  line-height: 1.8;
-  color: var(--charcoal-light);
-  padding-top: 1.5rem;
-}
-
-.testimonial-author {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  border-top: 1px solid var(--blush-light);
-  padding-top: 1.25rem;
-  margin-top: auto;
-}
-
-.testimonial-initials {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: var(--blush-pale);
-  border: 1px solid var(--blush-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--blush);
-  flex-shrink: 0;
-}
-
-.testimonial-name {
-  font-family: var(--font-body);
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  color: var(--charcoal);
-}
-
-.testimonial-event {
-  font-family: var(--font-body);
-  font-size: 0.65rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--blush);
-  margin-top: 0.2rem;
-}
-
-/* ============================================
    CONTACT
    ============================================ */
 
@@ -894,6 +803,11 @@ body {
 .logo-wrap--footer .logo-sub {
   color: rgba(250,248,245,0.45);
   font-size: 0.5rem;
+}
+
+.footer-star {
+  width: 32px;
+  height: 14px;
 }
 
 .footer-divider-v {
