@@ -59,6 +59,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .nav-logo {
@@ -120,6 +121,7 @@ body {
   display: flex;
   list-style: none;
   gap: 2rem;
+  align-items: center;
 }
 
 .nav-links a {
@@ -137,9 +139,12 @@ body {
 
 .nav-social-divider {
   width: 1px;
-  height: 16px;
+  height: 14px;
   background: var(--blush-light);
-  margin: 0 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
   align-self: center;
 }
 
@@ -984,6 +989,21 @@ body {
 
   .logo-sub {
     font-size: 0.48rem;
+  }
+
+  .nav-social-divider {
+    display: none;
+  }
+
+  .nav-social-link {
+    justify-content: center;
+  }
+
+  .nav-links li:has(.nav-social-link) {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem 0;
   }
 }
 
